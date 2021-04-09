@@ -11,6 +11,10 @@
 
     <modules>
         <module>Thread</module>
+        <module>assist-redis</module>
+        <module>assist-nutz</module>
+        <module>assist-nutz/assist-nutz-demo</module>
+        <module>assist-web</module>
     </modules>
 
     <!-- 全局配置 jdk 版本,项目编码格式,jar包版本管理 -->
@@ -47,6 +51,13 @@
             <groupId>com.github.xiaoymin</groupId>
             <artifactId>knife4j-spring</artifactId>
             <version>${knife4j-ui.version}</version>
+        </dependency>
+
+        <!-- jedis -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
         </dependency>
 
     </dependencies>
